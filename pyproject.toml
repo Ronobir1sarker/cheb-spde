@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cheb-spde"
+version = "1.0.0"
+description = "Chebyshev exponential-integrator solver for stochastic PDEs on bounded domains"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+requires-python = ">=3.9"
+authors = [
+    { name = "Ronobir Chandra Sarker", email = "ronobir.sarker@gmail.com" },
+]
+keywords = [
+    "stochastic partial differential equations",
+    "Chebyshev collocation",
+    "exponential integrators",
+    "ETDRK4",
+    "Talbot contour",
+    "Ornstein-Uhlenbeck noise",
+    "stochastic Allen-Cahn",
+    "stochastic Burgers",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.9",
+    "matplotlib>=3.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0", "pytest-cov"]
+dev = ["pytest>=7.0", "pytest-cov", "black", "ruff"]
+
+[project.urls]
+Homepage = "https://github.com/Ronobir1sarker/cheb-spde"
+Repository = "https://github.com/Ronobir1sarker/cheb-spde"
+Issues = "https://github.com/Ronobir1sarker/cheb-spde/issues"
+
+[tool.setuptools.packages.find]
+include = ["cheb_spde*"]
+exclude = ["tests*", "examples*", "docs*", "figures*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

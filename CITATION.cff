@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "cheb-spde: A Chebyshev exponential-integrator solver for stochastic PDEs on bounded domains"
+abstract: "Fast and memory-efficient Python package for simulating parabolic stochastic PDEs on bounded intervals with time-dependent Dirichlet boundary data and either additive white or Ornstein-Uhlenbeck noise. Combines Chebyshev-collocation spatial discretization with a stochastic exponential-Euler time step whose linear dynamics are propagated exactly via Talbot-contour matrix phi-functions and whose stochastic convolution is sampled exactly in the operator eigenbasis."
+authors:
+  - family-names: "Sarker"
+    given-names: "Ronobir Chandra"
+    email: "ronobir.sarker@gmail.com"
+    affiliation: "Department of Mathematics and Statistics, Bangladesh University of Business and Technology, Dhaka, Bangladesh"
+version: 1.0.0
+date-released: 2026-04-24
+license: MIT
+repository-code: "https://github.com/Ronobir1sarker/cheb-spde"
+keywords:
+  - "stochastic partial differential equations"
+  - "Chebyshev collocation"
+  - "exponential integrators"
+  - "ETDRK4"
+  - "Talbot contour"
+  - "Ornstein-Uhlenbeck noise"
+  - "stochastic Allen-Cahn"
+  - "stochastic Burgers"
+preferred-citation:
+  type: article
+  title: "A fast and memory-efficient Chebyshev exponential-integrator solver for stochastic PDEs on bounded domains"
+  authors:
+    - family-names: "Sarker"
+      given-names: "Ronobir Chandra"
+  journal: "MethodsX"
+  year: 2026
+  notes: "Submitted"
