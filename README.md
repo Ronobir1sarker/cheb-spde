@@ -149,13 +149,13 @@ The method combines ingredients from:
 
 ## Citation
 
-If you use this code in a publication, please cite the accompanying SoftwareX paper:
+If you use this code in a publication, please cite the accompanying MethodsX paper:
 
 ```bibtex
 @article{chebspde2026,
   author  = {Ronobir Chandra Sarker},
   title   = {cheb-spde: A Chebyshev exponential-integrator solver for stochastic PDEs on bounded domains},
-  journal = {SoftwareX},
+  journal = {MethodsX},
   year    = {2026},
   note    = {In preparation.},
 }
